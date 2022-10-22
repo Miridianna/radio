@@ -58,11 +58,11 @@ public class RadioTest {
     public void shouldSetPrevStation() {
         Radio radio = new Radio();
 
-        radio.setCurrentStation(2);
+        radio.setCurrentStation(0);
 
         radio.prev();
 
-        int expected = 1;
+        int expected = 9;
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
@@ -147,7 +147,7 @@ public class RadioTest {
     public void shouldFinishVolume() {
         Radio radio = new Radio();
 
-        radio.setCurrentVolume(0);
+        radio.getCurrentVolume();
 
         radio.finishIncreaseAndReduceVolume();
 
