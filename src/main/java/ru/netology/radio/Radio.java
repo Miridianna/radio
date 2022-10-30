@@ -59,15 +59,6 @@ public class Radio {
             currentVolume = currentVolume - 1;
         }
     }
-
-    public void finishIncreaseAndReduceVolume() {
-        if (currentVolume == 10) {
-            return;
-        }
-        if (currentVolume == 0) {
-            return;
-        }
-    }
 }
 
 
